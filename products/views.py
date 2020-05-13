@@ -3,6 +3,6 @@ from django.shortcuts import render
 
 # / productos - index
 # Uniform Resource Locator (Adress)
-def index(requests):
-    return HttpResponse('Hello Wold')
+def index(request):
+    return HttpResponse('Hello World')
 
