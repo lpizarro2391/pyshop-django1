@@ -7,5 +7,6 @@ from products import views
 # / productos/ new, todas las URL seran / products
 
 urlpatterns = [
-     path ('', views.index)
+     path ('', views.index),
+     path('new', views.new)
 ]
