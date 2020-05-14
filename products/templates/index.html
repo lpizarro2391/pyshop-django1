@@ -3,6 +3,7 @@
 {% block content %}
     <h1>Productos</h1>
     <div class="row">
+        {% for product in products %}
         <div class="col">
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
@@ -15,11 +16,7 @@
             </div>
         
         </div>
-    </div>
-    <ul>
-        {% for product in products %}
-            <li>{{ product.name }} ({{product.price}})</li>
         {% endfor %}
+    </div>
     
-    </ul>
 {% endblock%}
